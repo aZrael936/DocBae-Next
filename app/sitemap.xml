@@ -1,7 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.doctor-bae.com/</loc>
-    <lastmod>2023-11-13T10:29:11+00:00</lastmod>
-    <priority>1</priority>
+    <lastmod>2023-11-13T12:29:11+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://doctor-bae.com/</loc>
+    <lastmod>2023-11-13T12:29:11+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://wellnexushealth.com/</loc>
+    <lastmod>2023-11-13T12:29:11+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wellnexushealth.com/</loc>
+    <lastmod>2023-11-13T12:29:11+00:00</lastmod>
   </url>
 </urlset>
