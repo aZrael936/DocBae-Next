@@ -9,7 +9,7 @@ import TestimonialsContainer from './components/TestimonialCard/Testimonial';
 import WhatsAppButton from './components/WhatsappButton';
 import { Poppins, Manrope, Inter } from 'next/font/google';
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ['latin'],
   weight: ['500', '600'],
   variable: '--font-inter',
@@ -21,7 +21,7 @@ const poppins = Poppins({
   variable: '--font-poppins',
 });
 
-export const manrope = Manrope({
+const manrope = Manrope({
   subsets: ['latin'],
   variable: '--font-manrope',
   weight: ['500'],

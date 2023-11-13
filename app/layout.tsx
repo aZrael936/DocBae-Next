@@ -2,15 +2,6 @@ import type { Metadata } from 'next';
 import { Poppins, Manrope, Inter } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-});
-
-const manrope = Manrope({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
   title: 'Doctor Bae | Complete Home Doctor Services',
   description:
@@ -19,7 +10,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
   },
-  // openGraph: {
   //   type: 'website',
   //   url: 'https://www.doctor-bae.com',
   //   title: 'Doctor Bae | Complete Home Doctor Services',
@@ -44,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
