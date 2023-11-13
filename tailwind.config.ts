@@ -9,18 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        manrope: ['Manrope', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
-      },
-      fontWeight: {
-        'poppins-400': '400',
-        'poppins-500': '500',
-        'poppins-600': '600',
-        'poppins-700': '700',
-        'manrope-500': '500',
-        'inter-500': '500',
-        'inter-600': '600',
+        poppins: 'var(--font-poppins)',
+        manrope: 'var(--font-manrope)',
+        inter: 'var(--font-inter)',
       },
     },
   },
