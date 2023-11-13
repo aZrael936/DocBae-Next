@@ -8,10 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      fontWeight: {
+        'poppins-400': '400',
+        'poppins-500': '500',
+        'poppins-600': '600',
+        'poppins-700': '700',
+        'manrope-500': '500',
+        'inter-500': '500',
+        'inter-600': '600',
       },
     },
   },

@@ -8,6 +8,7 @@ import React from 'react';
 // import twitter from '../../assets/twitter.svg';
 // import linkedIn from '../../assets/linkedIn.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Footer() {
   return (
@@ -106,18 +107,22 @@ function Footer() {
           </div>
         </div>
         <div className="flex gap-3 justify-between">
-          <Image
-            src="/instagram.svg"
-            alt="instagramIcon"
-            height={20}
-            width={20}
-          />
-          <Image
-            src="/facebook.svg"
-            alt="facebookIcon"
-            height={20}
-            width={20}
-          />
+          <Link href={'https://www.instagram.com/doctorbae.app/'}>
+            <Image
+              src="/instagram.svg"
+              alt="instagramIcon"
+              height={20}
+              width={20}
+            />
+          </Link>
+          <Link href={'https://www.facebook.com/profile.php?id=61553161300507'}>
+            <Image
+              src="/facebook.svg"
+              alt="facebookIcon"
+              height={20}
+              width={20}
+            />
+          </Link>
           <Image src="/twitter.svg" alt="twitterIcon" height={20} width={20} />
           <Image
             src="/linkedIn.svg"

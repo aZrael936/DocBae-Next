@@ -10,9 +10,9 @@ function HeroSection() {
           Join Doctor Bae on a transformative journey.
         </p>
         <p className="text-[#7c4933] font-poppins text-center md:text-left font-medium text-[12px] md:text-base leading-[22.5px]">
-          At Doctor Bae, our vision is simple yet powerful: to make high-quality
-          healthcare accessible to everyone, anytime, anywhere.With our
-          telemedicine app, we're bridging the gap between you and better
+          At Doctor Bae, our vision is simple yet powerful. To make high-quality
+          healthcare accessible to everyone, anytime, anywhere. With our
+          telemedicine app, we are bridging the gap between you and better
           health.
         </p>
         <a
