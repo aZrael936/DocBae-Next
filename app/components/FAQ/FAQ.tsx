@@ -2,6 +2,28 @@ import React from 'react';
 import FAQblock from './FaqBlock';
 
 function FAQ() {
+  const faqs = [
+    {
+      heading: 'When should I use Home doctor Service?',
+      content: 'Other than emergency cases, you can use home doctor service.',
+    },
+    {
+      heading: 'Does DOCTOR BAE only benefits for geriatric patients?',
+      content:
+        'No, DOCTOR BAE provide service to all age group including both children and old-age',
+    },
+    {
+      heading:
+        'Will I get Injections, IV Drip & Medicines when I call home doctor service?',
+      content:
+        'Yes, We will provide you with complete prescription and guided referrals',
+    },
+    {
+      heading: 'Does Doctor come for follow up?',
+      content: 'Yes, Just a call away.',
+    },
+  ];
+
   return (
     <div
       id="FAQ"
@@ -13,22 +35,9 @@ function FAQ() {
         Questions
       </div>
       <div className="flex flex-col justify-center items-center gap-5 w-[80%]">
-        <FAQblock
-          heading="When should I use Home doctor Service?"
-          content="Other than emergency cases, you can use home doctor service."
-        />
-        <FAQblock
-          heading="Does DOCTOR BAE only benefits for geriatric patients?"
-          content="No, DOCTOR BAE provide service to all age group including both children and old-age"
-        />
-        <FAQblock
-          heading="Will I get Injections, IV Drip & Medicines when I call home doctor service ?"
-          content="Yes, We will provide you with complete prescription and guided refferals"
-        />
-        <FAQblock
-          heading="Does Doctor come for follow up?"
-          content="Yes, Just a call away."
-        />
+        {faqs.map((faq, index) => (
+          <FAQblock key={index} heading={faq.heading} content={faq.content} />
+        ))}
       </div>
     </div>
   );

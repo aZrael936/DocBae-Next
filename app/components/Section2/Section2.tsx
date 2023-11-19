@@ -1,6 +1,27 @@
 import Image from 'next/image';
 
 function SecondSection() {
+  const services = [
+    {
+      icon: '/Icon1.svg',
+      title: 'Convenient Home Visits:',
+      description:
+        'Hassle-free doctor visits at home for routine checks and specialized care.',
+    },
+    {
+      icon: '/Icon2.svg',
+      title: 'Online & WhatsApp Consultation:',
+      description:
+        'Expert medical advice via video, chat, or WhatsApp, providing quick and reliable access.',
+    },
+    {
+      icon: '/Icon3.svg',
+      title: 'Comprehensive Elderly Care:',
+      description:
+        'Dedicated, compassionate care tailored for the elderly, ensuring comfort and safety at home.',
+    },
+  ];
+
   return (
     <div
       id="AboutUS"
@@ -15,48 +36,30 @@ function SecondSection() {
             </p>
           </div>
           <p className="font-poppins text-[#421b0a] text-center md:text-left text-sm md:text-base font-medium leading-5 md:leading-[23.4px] ">
-            Initiative by wellnexus health science LLP stands as an innovative
-            and trailblazing entity in the field of health care, propelled by a
-            resolute mission to elevate healthcare across multi faceted
-            dimensions. Our foundation rests on an unwavering dedication to
-            attaining comprehensive health outcomes, with technology and
-            hands-on professional medical care intricately woven in to the
-            fabric of our approach.
+            As innovators in healthcare, Doctor Bae brings essential medical
+            services to your doorstep. Specializing in Home Doctor and Online
+            Consultations, we blend advanced technology with personalized care,
+            ensuring convenient and comprehensive healthcare solutions for
+            Thrissur residents.
           </p>
           <div className="flex gap-6 flex-col relative">
-            <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center md:items-start relative">
-              <Image
-                className="w-[40px] md:w-[44.5px] h-[40px] md:h-[44.5px] relative"
-                alt="Icon1"
-                src="/Icon1.svg"
-                width={40}
-                height={40}
-              />
-              <p className="font-poppins text-[#421b0a] md:text-base font-medium leading-[23.4px] relative text-sm text-center max-w-[272px] md:max-w-full md:text-left">
-                Avoid the hassle of traveling to a clinic or hospital. We bring
-                medical expertise to your doorstep
-              </p>
-            </div>
-            <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center md:items-start justify-start relative">
-              <Image
-                className="w-[40px] md:w-[44.5px] h-[40px] md:h-[44.5px] relative"
-                alt="Icon2"
-                src="/Icon2.svg"
-                width={40}
-                height={40}
-              />
-              <p className="font-poppins text-[#421b0a] md:text-base font-medium leading-[23.4px]  relative text-sm text-center max-w-[272px] md:max-w-full md:text-left">
-                Access medical advice, diagnoses, prescriptions from home via
-                video calls, chat, or phone with specialists.
-              </p>
-            </div>
-            <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center md:items-start justify-start relative">
-              <Image alt="Icon3" src="/Icon3.svg" width={40} height={40} />
-              <p className="font-poppins text-[#421b0a] md:text-base font-medium leading-[23.4px] relative text-sm text-center max-w-[272px] md:max-w-full md:text-left">
-                Schedule appointments to fit your routine, No need to disrupt
-                your daily routine; healthcare comes to you.
-              </p>
-            </div>
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row gap-2 md:gap-4 items-center md:items-start relative"
+              >
+                <Image
+                  className="w-[40px] md:w-[44.5px] h-[40px] md:h-[44.5px] relative"
+                  alt={`Icon ${index + 1}`}
+                  src={service.icon}
+                  width={40}
+                  height={40}
+                />
+                <p className="font-poppins text-[#421b0a] md:text-base font-medium leading-[23.4px] relative text-sm text-center max-w-[272px] md:max-w-full md:text-left">
+                  <b>{service.title}</b> {service.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
         <Image

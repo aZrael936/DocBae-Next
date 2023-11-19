@@ -8,7 +8,7 @@ interface FAQblockIntrface {
 }
 
 const FAQblock: React.FC<FAQblockIntrface> = ({ heading, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);

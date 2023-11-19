@@ -7,13 +7,13 @@ function HeroSection() {
     <div className="flex flex-col-reverse lg:flex-row  items-center justify-between mt-10 gap-12">
       <div className="flex-1 lg:flex-[0.4] flex gap-5 md:gap-6 flex-col items-center md:items-start">
         <p className="text-[#151561] text-center md:text-left font-poppins font-[700] text-[32px] leading-[41.6px] tracking-wider">
-          Join Doctor Bae on a transformative journey.
+          Doctor Bae: Your Trusted Home Doctor Service
         </p>
         <p className="text-[#7c4933] font-poppins text-center md:text-left font-medium text-[12px] md:text-base leading-[22.5px]">
-          At Doctor Bae, our vision is simple yet powerful. To make high-quality
-          healthcare accessible to everyone, anytime, anywhere. With our
-          telemedicine app, we are bridging the gap between you and better
-          health.
+          Transforming healthcare in Thrissur, Doctor Bae offers premier home
+          doctor and online consultation services. Our telemedicine app provides
+          easy access to quality healthcare, focusing on elderly care and
+          convenience for all.
         </p>
         <a
           href="https://wa.me/9539313130?text=Hi%21%20I%20would%20like%20to%20enquire%20about%20your%20Services."

@@ -3,9 +3,10 @@ import { Poppins, Manrope, Inter } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Doctor Bae | Complete Home Doctor Services',
+  title:
+    'Doctor Bae | Comprehensive Home Healthcare Services: Home Doctor Visits, Online Consultation, and Medical Equipment Rental',
   description:
-    'DoctorBae Health Services is a leading provider of comprehensive healthcare solutions in Thrissur, Kerala. We offer a wide range of services, including home doctor services, online doctor consultations, onsite medical camps, school health programs, and customized health centers at institutions. Our team of experienced and qualified doctors and healthcare professionals is dedicated to providing you with the highest quality care possible',
+    'Expert and compassionate home healthcare solutions at your doorstep. Offering doctor house calls, online medical consultations, palliative care, post-op and post-pregnancy care, medical equipment rentals, medicine delivery, and more. Specialized elderly care and accessible health support through WhatsApp consultations. Serving your health needs with convenience and quality care',
   keywords: ['Home Doctor', 'Home Doctor Thrissur', 'Medical Camp'],
   robots: {
     index: true,
