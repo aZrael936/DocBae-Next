@@ -10,6 +10,12 @@ interface FAQblockIntrface {
 const FAQblock: React.FC<FAQblockIntrface> = ({ heading, content }) => {
   const [isOpen, setIsOpen] = useState(true);
 
+  const contentList = content.split('\n').map((item, index) => (
+    <li key={index} className="list-disc ml-5">
+      {item.replace('• ', '')}
+    </li>
+  ));
+
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
@@ -32,7 +38,7 @@ const FAQblock: React.FC<FAQblockIntrface> = ({ heading, content }) => {
       </div>
       {isOpen && (
         <div className="mt-4">
-          <p>{content}</p>
+          <ul>{contentList}</ul>
         </div>
       )}
     </div>

@@ -8,6 +8,34 @@ interface TestimonialProps {
   designation: string;
 }
 
+const testimonials = [
+  {
+    text: 'Emphasizing home doctor visits for mental health, we provide discreet and compassionate palliative care, ensuring comfort and fostering wellbeing in your home environment, tailored to your schedule for ultimate convenience.',
+    photo: '/Test1.avif',
+    name: 'Dr Sumayya Shamsudheen MBBS, MD',
+    designation: 'Psychiatrist',
+  },
+  {
+    text: 'Specializing in post-op care, our critical care specialists support recovery with home doctor visits, reducing hospital stays with quality medical equipment rental, ensuring continuous and personalized healthcare services.',
+    photo: '/Test2.avif',
+    name: 'Dr Deepak Raj KS MBBS, MD',
+    designation: 'Anesthesiology and Critical Care Specialist',
+  },
+  {
+    text: 'Our online consultations bring dermatological expertise to your doorstep. We provide follow-up skincare advice, prescription delivery, and support for post-treatment care with the ease of medicine delivery services.',
+    photo: '/Test4.avif',
+    name: 'Dr Premjith T.J MBBS, MD, DNB, DVL',
+    designation: 'Dermatology, Venerology & Leprosy Specialist',
+  },
+  {
+    text: 'Enhancing ENT care with home doctor services, we offer comprehensive online consultations and follow-ups, facilitating post-disease recovery and treatment effectiveness, supported by WhatsApp consultations for immediate attention.',
+    photo: '/Test3.avif',
+    name: 'Dr Sabreena MBBS, MS',
+    designation: 'ENT Specialist',
+    hiddenOnDesktop: true,
+  },
+];
+
 const Testimonial: React.FC<TestimonialProps> = ({
   text,
   photo,
@@ -50,32 +78,19 @@ export default function TestimonialsContainer() {
         Inspiring health stories
       </p>
       <div className="flex justify-center items-center gap-5 flex-col md:flex-row p-10 w-full">
-        <Testimonial
-          text="To break stigma of mental health is to open with yourselves and others on stresses, anxieties and feeling, also means seeking help gathering and supporting others who seek help."
-          photo="/Test1.avif"
-          name="Dr Sumayya Shamsudheen MBBS, MD"
-          designation="Psychiatrist"
-        />
-        <Testimonial
-          text="Post operative care under the guidance of a critical care specialist will be a great help for the patients. DoctorBae's assistance can help reduce your Hospital Stay with a Mini Hospital at your Doorstep"
-          photo="/Test2.avif"
-          name="Dr Deepak Raj KS MBBS, MD"
-          designation="Anesthesiology and Critical Care Specialist"
-        />
-        <Testimonial
-          text="Our expert of team is ready to provide you best mark of health care within th field of dermatology followup and skincare need and advises."
-          photo="/Test4.avif"
-          name="Dr Premjith T.J MBBS, MD, DNB, DVL"
-          designation="Dermatology, Venerology & Leprosy Specialist"
-        />
-        <div className="md:hidden">
-          <Testimonial
-            text="There is much need for follow-up of any disease by a doctor and patient for a much better treatment results. Home Doctor Services and Online Consultation makes this Easy and Effective"
-            photo="/Test3.avif"
-            name="Dr Sabreena MBBS, MS"
-            designation="ENT Specialist"
-          />
-        </div>
+        {testimonials.map((testimonial, index) => (
+          <div
+            key={index}
+            className={`flex ${testimonial.hiddenOnDesktop ? 'md:hidden' : ''}`}
+          >
+            <Testimonial
+              text={testimonial.text}
+              photo={testimonial.photo}
+              name={testimonial.name}
+              designation={testimonial.designation}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
