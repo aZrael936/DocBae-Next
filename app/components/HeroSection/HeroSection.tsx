@@ -8,7 +8,7 @@ function HeroSection() {
       <div className="flex-1 lg:flex-[0.4] flex gap-5 md:gap-6 flex-col items-center md:items-start">
         <p className="text-[#151561] text-center md:text-left font-poppins font-[700] text-[32px] leading-[41.6px] tracking-wider">
           Experience compassionate palliative care at home with Doctor Bae,
-          Thrissur's leading pain and palliative care service
+          Thrissur&apos;s leading pain and palliative care service
         </p>
         <p className="text-[#7c4933] font-poppins text-center md:text-left font-medium text-[12px] md:text-base leading-[22.5px]">
           Book convenient home doctor visits, online consultations, and discreet
