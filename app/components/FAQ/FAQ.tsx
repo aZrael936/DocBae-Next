@@ -1,67 +1,76 @@
-'use client';
-import React from 'react';
-import FAQblock from './FaqBlock';
-import { Helmet } from 'react-helmet';
+"use client";
+import React from "react";
+import FAQblock from "./FaqBlock";
+import { Helmet } from "react-helmet";
 
 function FAQ() {
   const faqs = [
     {
-      heading: 'What Services Do Home Doctors from DOCTOR BAE Offer?',
+      heading: "What is Palliative Care?",
       content:
-        '• In-home medical consultations\n' +
-        '• Routine health check-ups\n' +
-        '• Injections, IV drips, and medicine delivery\n' +
-        '• Post-operative care and follow-up\n' +
-        '• Palliative care services',
+        "Palliative care focuses on improving the quality of life for people living with chronic or life-limiting illnesses. It provides relief from pain and other symptoms, emotional support for patients and families, and respect for individual choices during challenging times.",
     },
+
     {
-      heading:
-        'Can I Get Immediate Medical Care at Home in Non-Emergency Situations?',
+      heading: "Who can Benefit from Palliative Care?",
       content:
-        '• Yes, for urgent but non-emergency care\n' +
-        '• Yes, for elderly care and assistance\n' +
-        '• Yes, for blood investigations at home\n' +
-        '• Yes, for post-pregnancy care and support\n' +
-        '• Yes, for administering prescribed injections and treatments',
+        "Anyone living with a serious illness, such as cancer, heart disease, lung disease, or neurological conditions, can benefit from palliative care. It can be started at any stage of the illness, regardless of prognosis.",
     },
+
     {
-      heading:
-        'How Does DOCTOR BAE Ensure Continuity of Care Through Its Home Doctor Services?',
+      heading: "Services Offered in Our Palliative Care Program",
       content:
-        '• Through scheduled follow-up visits\n' +
-        '• By providing post-op and post-pregnancy care\n' +
-        '• With accessible online and WhatsApp consultations\n' +
-        '• By organizing medical camps for ongoing community support\n' +
-        '• Through rental of medical equipment for home care',
+        "Our comprehensive palliative care program includes:\n" +
+        "- Home doctor visits for pain management and symptom control\n" +
+        "- Expert consultations with palliative care specialists\n" +
+        "- Online and WhatsApp consultations for ongoing support\n" +
+        "- Discreet and compassionate care for mental health and well-being\n" +
+        "- Coordination with home nursing and equipment rentals\n" +
+        "- Bereavement support for families and caregivers",
     },
+
     {
-      heading: 'What Are the Benefits of Choosing DOCTOR BAE for Elderly Care?',
+      heading: "Medical Conditions Managed Through Home Doctor Visits",
       content:
-        '• Personalized home care plans\n' +
-        '• Specialized geriatric medical consultations\n' +
-        '• Assistance with daily medical routines\n' +
-        '• Coordination of medicine deliveries\n' +
-        '• Support with mobility and rehabilitation equipment',
+        "Our home doctors can manage various conditions, including:\n" +
+        "- Acute infections like fever, cold, or urinary tract infections\n" +
+        "- Chronic illnesses like diabetes, hypertension, or arthritis\n" +
+        "- Post-operative care and wound management\n" +
+        "- Pain management and symptom control\n" +
+        "- Medication reviews and adjustments",
     },
+
     {
-      heading: 'How Does DOCTOR BAE Integrate Technology with Home Healthcare?',
+      heading: "Scheduling Home Doctor Visits",
       content:
-        '• By offering telemedicine and online doctor consultations\n' +
-        '• Through a user-friendly telemedicine app for easy access\n' +
-        '• Via WhatsApp for instant medical advice and prescription refills\n' +
-        '• Through electronic medical records for seamless care coordination\n' +
-        '• By providing the latest medical equipment for rent',
+        "You can schedule visits as often as your condition requires, whether it's daily, weekly, or less frequently. We also offer same-day appointments for urgent needs.",
+    },
+
+    {
+      heading: "Medical Concerns Addressed Through Online Consultations",
+      content:
+        "Online consultations are suitable for various concerns, including:\n" +
+        "- Follow-up consultations for existing conditions\n" +
+        "- Minor illnesses like allergies, skin rashes, or common colds\n" +
+        "- Medication refills and prescription consultations\n" +
+        "- Seeking general medical advice and guidance",
+    },
+
+    {
+      heading: "Requirements for Online Consultations",
+      content:
+        "You only need a smartphone, tablet, or computer with a webcam and internet access. We ensure a secure and user-friendly platform for your consultation.",
     },
   ];
 
   const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
-      '@type': 'Question',
+      "@type": "Question",
       name: faq.heading,
       acceptedAnswer: {
-        '@type': 'Answer',
+        "@type": "Answer",
         text: faq.content,
       },
     })),

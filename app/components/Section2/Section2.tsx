@@ -1,24 +1,24 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 function SecondSection() {
   const services = [
     {
-      icon: '/Icon1.svg',
-      title: 'Convenient Home Visits:',
+      icon: "/Icon1.svg",
+      title: "Convenient Home Visits:",
       description:
-        'Hassle-free doctor visits at home for routine checks and specialized care.',
+        "Hassle-free doctor visits at home for routine checks and specialized care.",
     },
     {
-      icon: '/Icon2.svg',
-      title: 'Online & WhatsApp Consultation:',
+      icon: "/Icon2.svg",
+      title: "Online & WhatsApp Consultation:",
       description:
-        'Expert medical advice via video, chat, or WhatsApp, providing quick and reliable access.',
+        "Expert medical advice via video, chat, or WhatsApp, providing quick and reliable access.",
     },
     {
-      icon: '/Icon3.svg',
-      title: 'Comprehensive Elderly Care:',
+      icon: "/Icon3.svg",
+      title: "Comprehensive Elderly Care:",
       description:
-        'Dedicated, compassionate care tailored for the elderly, ensuring comfort and safety at home.',
+        "From daily assistance to expert palliative care, we cater to every aspect of senior well-being, fostering comfort, dignity, and peace of mind in the familiar surroundings of home.",
     },
   ];
 
