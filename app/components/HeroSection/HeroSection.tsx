@@ -14,16 +14,28 @@ function HeroSection() {
           Book convenient home doctor visits, online consultations, and discreet
           care for chronic illness and end-of-life support.
         </p>
-        <a
-          href="https://wa.me/9539313130?text=Hi%21%20I%20would%20like%20to%20enquire%20about%20your%20Services."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-[80%] md:w-[40%]"
-        >
-          <button className="flex items-center text-[#151561] justify-center bg-[#fc8732] hover:bg-[#FF6B00] h-[45px] w-full text-[15px] font-[600] rounded-md">
-            <b>Book Now</b>
-          </button>
-        </a>
+        <div className="flex flex-row gap-4 w-full md:w-[80%] justify-center md:justify-start">
+          <a
+            href="https://wa.me/9539313130?text=Hi%21%20I%20would%20like%20to%20enquire%20about%20your%20Services."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[80%] md:w-[40%]"
+          >
+            <button className="flex items-center text-[#151561] justify-center bg-[#fc8732] hover:bg-[#FF6B00] h-[45px] w-full text-[15px] font-[600] rounded-md">
+              <b>Book Now</b>
+            </button>
+          </a>
+          <a
+            href="tel:919539313130"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[80%] md:w-[40%]"
+          >
+            <button className="flex items-center text-[#FAFAFA] justify-center bg-[#151561] hover:bg-[#20208B] h-[45px] w-full text-[15px] font-[600] rounded-md">
+              <b>Call Now</b>
+            </button>
+          </a>
+        </div>
       </div>
 
       <div className="flex-1 lg:flex-[0.6] shadow-[0px_0px_15.08513px_0px_rgba(229,72,4,0.30)] rounded-lg overflow-hidden">

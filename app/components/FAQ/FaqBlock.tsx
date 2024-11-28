@@ -1,24 +1,31 @@
-'use client';
-import React, { useState } from 'react';
-import Image from 'next/image';
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
 
-interface FAQblockIntrface {
+interface FAQblockInterface {
   heading: string;
-  content: string;
+  content: string | React.ReactNode;
 }
 
-const FAQblock: React.FC<FAQblockIntrface> = ({ heading, content }) => {
+const FAQblock: React.FC<FAQblockInterface> = ({ heading, content }) => {
   const [isOpen, setIsOpen] = useState(true);
 
-  const contentList = content.split('\n').map((item, index) => (
-    <li key={index} className="list-disc ml-5">
-      {item.replace('• ', '')}
-    </li>
-  ));
+  const renderContent = () => {
+    if (typeof content === "string") {
+      const contentList = content.split("\n").map((item, index) => (
+        <li key={index} className="list-disc ml-5">
+          {item.replace("• ", "").replace("- ", "")}
+        </li>
+      ));
+      return <ul>{contentList}</ul>;
+    }
+    return content;
+  };
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div
       className="items-start rounded-[8px] flex-col bg-white p-5 w-full gap-5 text-sm h-auto"
@@ -32,15 +39,11 @@ const FAQblock: React.FC<FAQblockIntrface> = ({ heading, content }) => {
           width={15}
           height={15}
           className={`transform transition-transform ${
-            isOpen ? 'rotate-90' : 'rotate-0'
+            isOpen ? "rotate-90" : "rotate-0"
           }`}
         />
       </div>
-      {isOpen && (
-        <div className="mt-4">
-          <ul>{contentList}</ul>
-        </div>
-      )}
+      {isOpen && <div className="mt-4">{renderContent()}</div>}
     </div>
   );
 };
