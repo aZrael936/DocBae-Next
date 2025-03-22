@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import phoneIcon from '../../assets/phoneIcon.avif';
 // import emailIcon from '../../assets/emailI.avif';
 // import footerLogoMobile from '../../assets/footerLogoMobile.svg';
@@ -7,8 +7,8 @@ import React from 'react';
 // import facebook from '../../assets/facebook.svg';
 // import twitter from '../../assets/twitter.svg';
 // import linkedIn from '../../assets/linkedIn.svg';
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -50,7 +50,7 @@ function Footer() {
         <div className="flex flex-col">
           <div className="flex text-[#ffffff] font-poppins font-medium leading-6 flex-start flex-col gap-3 relative">
             <a href="#AboutUS">
-              <div className="">About US</div>
+              <div className="">About Us</div>
             </a>
             <a href="#Services">
               <div className="">Services</div>
@@ -107,7 +107,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex gap-3 justify-between">
-          <Link href={'https://www.instagram.com/doctorbae.app/'}>
+          <Link href={"https://www.instagram.com/doctorbae.app/"}>
             <Image
               src="/instagram.svg"
               alt="instagramIcon"
@@ -115,7 +115,7 @@ function Footer() {
               width={20}
             />
           </Link>
-          <Link href={'https://www.facebook.com/profile.php?id=61553161300507'}>
+          <Link href={"https://www.facebook.com/profile.php?id=61553161300507"}>
             <Image
               src="/facebook.svg"
               alt="facebookIcon"

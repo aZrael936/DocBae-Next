@@ -11,51 +11,32 @@ interface FAQ {
 function FAQ() {
   const faqs: FAQ[] = [
     {
-      heading: "What is Palliative Care?",
+      heading:
+        "How frequently will health checkups be conducted at our school?",
       content:
-        "Palliative care focuses on improving the quality of life for people living with chronic or life-limiting illnesses. It provides relief from pain and other symptoms, emotional support for patients and families, and respect for individual choices during challenging times.",
+        "Doctor BAE provides comprehensive health checkups once per semester, with additional specialized screenings scheduled throughout the year according to our program timeline. We can customize the frequency based on your school's specific needs.",
     },
     {
-      heading: "Who can Benefit from Palliative Care?",
+      heading: "Is parental consent required for all health services?",
       content:
-        "Anyone living with a serious illness, such as cancer, heart disease, lung disease, or neurological conditions, can benefit from palliative care. It can be started at any stage of the illness, regardless of prognosis.",
+        "Yes, we require signed parental consent forms before providing any health services to students. For specialized services like drug testing (which is optional), we require separate consent forms and ensure confidential handling of all results.",
     },
     {
-      heading: "Services Offered in Our Palliative Care Program",
+      heading:
+        "How does Doctor BAE ensure student privacy during sensitive health discussions?",
       content:
-        "• Home doctor visits for pain management and symptom control\n" +
-        "• Expert consultations with palliative care specialists\n" +
-        "• Online and WhatsApp consultations for ongoing support\n" +
-        "• Discreet and compassionate care for mental health and well-being\n" +
-        "• Coordination with home nursing and equipment rentals\n" +
-        "• Bereavement support for families and caregivers",
+        "We maintain strict confidentiality protocols for all student interactions. Mental health sessions and sensitive discussions take place in private settings, and all health records are securely stored in compliance with medical privacy regulations.",
     },
     {
-      heading: "Medical Conditions Managed Through Home Doctor Visits",
+      heading: "What qualifications do your healthcare professionals have?",
       content:
-        "• Acute infections like fever, cold, or urinary tract infections\n" +
-        "• Chronic illnesses like diabetes, hypertension, or arthritis\n" +
-        "• Post-operative care and wound management\n" +
-        "• Pain management and symptom control\n" +
-        "• Medication reviews and adjustments",
+        "All Doctor BAE professionals are licensed and certified in their respective fields with specific experience working with children and adolescents. Our team includes pediatricians, dentists, optometrists, psychologists, and registered nurses with a minimum of 5 years of professional experience.",
     },
     {
-      heading: "Scheduling Home Doctor Visits",
+      heading:
+        "Can the program be customized to address specific health concerns at our school?",
       content:
-        "You can schedule visits as often as your condition requires, whether it's daily, weekly, or less frequently. We also offer same-day appointments for urgent needs.",
-    },
-    {
-      heading: "Medical Concerns Addressed Through Online Consultations",
-      content:
-        "• Follow-up consultations for existing conditions\n" +
-        "• Minor illnesses like allergies, skin rashes, or common colds\n" +
-        "• Medication refills and prescription consultations\n" +
-        "• Seeking general medical advice and guidance",
-    },
-    {
-      heading: "Requirements for Online Consultations",
-      content:
-        "You only need a smartphone, tablet, or computer with a webcam and internet access. We ensure a secure and user-friendly platform for your consultation.",
+        "Absolutely! While we offer a comprehensive standard program, we recognize each school community has unique needs. We'll work with your administration to customize our services, focusing on specific health concerns prevalent in your student population.",
     },
   ];
 
@@ -78,7 +59,7 @@ function FAQ() {
   return (
     <div
       id="FAQ"
-      className="items-center bg-[#ffb277] flex flex-col gap-16 justify-center relative w-full px-[20px] md:px-[80px] py-[60px]"
+      className="items-center bg-gradient-to-b from-[#FFF6E9] to-[#ffb277] flex flex-col gap-16 justify-center relative w-full px-[20px] md:px-[80px] py-[60px]"
     >
       <Helmet>
         <script type="application/ld+json">

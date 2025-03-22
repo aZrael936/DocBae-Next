@@ -16,7 +16,7 @@ function Navbar() {
       <div className="hidden md:flex items-center space-x-8 flex-grow justify-center max-w-2xl">
         <a href="#AboutUS">
           <div className="text-[#151560] font-poppins font-medium text-base whitespace-nowrap">
-            About US
+            About Us
           </div>
         </a>
         <a href="#Services">

@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface TestimonialProps {
   text: string;
@@ -10,28 +10,28 @@ interface TestimonialProps {
 
 const testimonials = [
   {
-    text: 'Emphasizing home doctor visits for mental health, we provide discreet and compassionate palliative care, ensuring comfort and fostering wellbeing in your home environment, tailored to your schedule for ultimate convenience.',
-    photo: '/Test1.avif',
-    name: 'Dr Sumayya Shamsudheen MBBS, MD',
-    designation: 'Psychiatrist',
+    text: "Emphasizing home doctor visits for mental health, we provide discreet and compassionate palliative care, ensuring comfort and fostering wellbeing in your home environment, tailored to your schedule for ultimate convenience.",
+    photo: "/Test1.avif",
+    name: "Dr Sumayya Shamsudheen MBBS, MD",
+    designation: "Psychiatrist",
   },
   {
-    text: 'Specializing in post-op care, our critical care specialists support recovery with home doctor visits, reducing hospital stays with quality medical equipment rental, ensuring continuous and personalized healthcare services.',
-    photo: '/Test2.avif',
-    name: 'Dr Deepak Raj KS MBBS, MD',
-    designation: 'Anesthesiology and Critical Care Specialist',
+    text: "Specializing in post-op care, our critical care specialists support recovery with home doctor visits, reducing hospital stays with quality medical equipment rental, ensuring continuous and personalized healthcare services.",
+    photo: "/Test2.avif",
+    name: "Dr Deepak Raj KS MBBS, MD",
+    designation: "Anesthesiology and Critical Care Specialist",
   },
   {
-    text: 'Our online consultations bring dermatological expertise to your doorstep. We provide follow-up skincare advice, prescription delivery, and support for post-treatment care with the ease of medicine delivery services.',
-    photo: '/Test4.avif',
-    name: 'Dr Premjith T.J MBBS, MD, DNB, DVL',
-    designation: 'Dermatology, Venerology & Leprosy Specialist',
+    text: "Our online consultations bring dermatological expertise to your doorstep. We provide follow-up skincare advice, prescription delivery, and support for post-treatment care with the ease of medicine delivery services.",
+    photo: "/Test4.avif",
+    name: "Dr Premjith T.J MBBS, MD, DNB, DVL",
+    designation: "Dermatology, Venerology & Leprosy Specialist",
   },
   {
-    text: 'Enhancing ENT care with home doctor services, we offer comprehensive online consultations and follow-ups, facilitating post-disease recovery and treatment effectiveness, supported by WhatsApp consultations for immediate attention.',
-    photo: '/Test3.avif',
-    name: 'Dr Sabreena MBBS, MS',
-    designation: 'ENT Specialist',
+    text: "Enhancing ENT care with home doctor services, we offer comprehensive online consultations and follow-ups, facilitating post-disease recovery and treatment effectiveness, supported by WhatsApp consultations for immediate attention.",
+    photo: "/Test3.avif",
+    name: "Dr Sabreena MBBS, MS",
+    designation: "ENT Specialist",
     hiddenOnDesktop: true,
   },
 ];
@@ -73,7 +73,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
 
 export default function TestimonialsContainer() {
   return (
-    <div className="flex flex-col bg-gradient-to-b from-[rgb(255,246,233,100)] to-[rgba(255,255,255,0)]">
+    <div className="flex flex-col bg-gradient-to-b from-white to-[#FFF6E9] py-12">
       <p className="font-bold text-3xl text-center mt-6 text-[#2D2D72]">
         Inspiring health stories
       </p>
@@ -81,7 +81,7 @@ export default function TestimonialsContainer() {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className={`flex ${testimonial.hiddenOnDesktop ? 'md:hidden' : ''}`}
+            className={`flex ${testimonial.hiddenOnDesktop ? "md:hidden" : ""}`}
           >
             <Testimonial
               text={testimonial.text}
