@@ -41,14 +41,14 @@ function ServiceSection() {
           {hoveredCardRow1 === "service5" && (
             <motion.div className="z-[1] flex flex-col gap-2 text-lg">
               <p className="text-white py-4">
-                Our comprehensive school health program focuses on students'
-                overall wellbeing through regular health screenings, mental
-                wellness support, and preventive care. We provide wellness
-                check-ins, mental health workshops, training in lifesaving
-                skills, nutrition education, and awareness programs throughout
-                the academic year. Our goal is to create a healthy learning
-                environment that supports academic success while teaching
-                essential health practices.
+                Our comprehensive school health program focuses on
+                student&apos;s overall wellbeing through regular health
+                screenings, mental wellness support, and preventive care. We
+                provide wellness check-ins, mental health workshops, training in
+                lifesaving skills, nutrition education, and awareness programs
+                throughout the academic year. Our goal is to create a healthy
+                learning environment that supports academic success while
+                teaching essential health practices.
               </p>
               <a
                 href="https://wa.me/9539313130?text=Hi%21%20I%20would%20like%20to%20enquire%20about%20your%20Services."
@@ -213,6 +213,10 @@ function ServiceSection() {
           </motion.h3>
           {hoveredCardRow2 === "service4" && (
             <motion.div className="z-[1] flex flex-col gap-2 text-lg">
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                We&apos;re committed to providing comprehensive healthcare
+                services
+              </p>
               <p className="text-white">
                 Healthcare services designed for quick and easy access, ensuring
                 patients receive prompt treatment with minimal barriers,

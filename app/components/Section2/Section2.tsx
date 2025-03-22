@@ -42,7 +42,10 @@ function SecondSection() {
             care, we help build the foundation for academic success and lifelong
             health habits. Our team of healthcare professionals works closely
             with school staff to implement a comprehensive approach tailored to
-            each institution's unique needs.
+            each institution&apos;s unique needs.
+          </p>
+          <p className="text-gray-600">
+            Let&apos;s work together to create a healthier future
           </p>
           <div className="flex gap-6 flex-col relative">
             {services.map((service, index) => (

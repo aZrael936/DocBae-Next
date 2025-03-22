@@ -42,7 +42,7 @@ function ProgramHighlights() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Our comprehensive school health program is designed to support
-            students' physical and mental wellbeing through regular assessments,
+            students&apos; physical and mental wellbeing through regular assessments,
             education, and preventive care.
           </motion.p>
         </div>
@@ -77,7 +77,7 @@ function ProgramHighlights() {
           <div className="text-center mb-12">
             <Badge className="mb-4">Program Benefits</Badge>
             <h3 className="text-2xl md:text-3xl font-poppins font-bold text-[#151561]">
-              What's Included?
+              What&apos;s Included?
             </h3>
           </div>
 
