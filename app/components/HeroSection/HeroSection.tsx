@@ -24,7 +24,7 @@ function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start">
           <a
-            href="https://wa.me/9539313130?text=Hi%21%20I%20would%20like%20to%20enquire%20about%20your%20Services."
+            href="https://wa.me/919539313130?text=Hi%21%20I%20would%20like%20to%20enquire%20about%20your%20Services."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
